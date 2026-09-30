@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard — Baribari</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="app-bar">
+    <div class="brand-mark"><span class="dot"></span> Baribari</div>
+    <button id="sideToggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+  </div>
+
+  <div class="shell">
+    <aside class="sidebar">
+      <div>
+        <div class="brand-mark"><span class="dot"></span> Baribari</div>
+        <div class="side-role" id="roleBadge">loading…</div>
+      </div>
+
+      <nav class="nav" id="nav">
+        <button data-view="overview" class="active">Overview</button>
+        <button data-view="properties">Properties</button>
+        <button data-view="tenants">Tenants</button>
+        <button data-view="leases">Leases</button>
+        <button data-view="rent">Rent collection</button>
+        <button data-view="expenses">Expenses &amp; bills</button>
+        <button data-view="staff">Staff &amp; salary</button>
+        <button data-view="maintenance">Maintenance</button>
+        <button data-view="managers" id="navManagers">Managers</button>
+        <button data-view="reports">Monthly report</button>
+      </nav>
+
+      <div class="side-foot">
+        <div id="whoName" style="color:#fff;font-weight:500"></div>
+        <div id="whoEmail" style="font-size:.8rem;color:#8ea092"></div>
+        <a href="index.html">&#8592; View website</a>
+        <button class="btn ghost small" id="logout" style="margin-top:.6rem;width:100%">Sign out</button>
+      </div>
+    </aside>
+
+    <main class="main" id="main">
+      <div class="empty">Loading your dashboard…</div>
+    </main>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    /* mobile: show and hide the sidebar */
+    (function () {
+      var t = document.getElementById('sideToggle');
+      var s = document.querySelector('.sidebar');
+      if (!t || !s) return;
+      t.addEventListener('click', function () {
+        var open = s.classList.toggle('open');
+        t.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      s.addEventListener('click', function (e) {
+        if (e.target.closest('.nav button') && window.innerWidth <= 860) s.classList.remove('open');
+      });
+    })();
+  </script>
+</body>
+
+</html>

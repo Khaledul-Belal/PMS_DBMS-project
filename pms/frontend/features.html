@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Features — Baribari</title>
+<meta name="description" content="Floor plans, tenants, agreements, rent collection, bills, maintenance, staff salary and monthly profit reports.">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav-bar" id="navBar">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html"><span class="mark"></span><span>Baribari</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="features.html" aria-current="page">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn ghost" href="login.html">Sign in</a>
+      <a class="btn" href="signup.html">Get started</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <span class="eyebrow">Features</span>
+      <h1>Everything a building needs, in one account</h1>
+      <p class="lead">Baribari covers the whole cycle: the building itself, the people renting it, the money coming in and the money going out.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="grid three">
+        <article class="card"><div class="ico">🏢</div><h3>Building and floor plan</h3>
+          <p>Every building holds floors, every floor holds flats, shops, offices or garages. The floor plan view
+             colours each unit green, amber or red so you can see the building at a glance.</p></article>
+        <article class="card"><div class="ico">⚡</div><h3>Bulk setup</h3>
+          <p>Ten floors with three flats each is one form and one click. Then edit any single flat that has a
+             different rent, size or number of bedrooms.</p></article>
+        <article class="card"><div class="ico">🔑</div><h3>Tenant records</h3>
+          <p>Name, phone, NID, occupation, family size, permanent address and an emergency contact - everything
+             you would otherwise keep on a photocopy in a drawer.</p></article>
+        <article class="card"><div class="ico">📄</div><h3>Agreements</h3>
+          <p>Start date, duration, monthly rent, advance taken and the rent due day. Agreements ending within
+             sixty days are flagged so you can start looking for a tenant early.</p></article>
+        <article class="card"><div class="ico">৳</div><h3>Rent collection</h3>
+          <p>One button creates the rent line for every active agreement. Record full, partial or missed payments
+             with the method - cash, bKash, Nagad, bank or cheque.</p></article>
+        <article class="card"><div class="ico">🧾</div><h3>Bills by category</h3>
+          <p>Electricity, water, gas, garbage, lift, wiring, plumbing, painting, security. Each bill can belong to
+             the whole building or to one flat.</p></article>
+        <article class="card"><div class="ico">🔧</div><h3>Maintenance jobs</h3>
+          <p>Log what broke, how urgent it is and who is fixing it. Marking a job done with a cost writes the
+             expense for you, so no repair is ever missed in the accounts.</p></article>
+        <article class="card"><div class="ico">👷</div><h3>Staff and salary</h3>
+          <p>Caretakers, guards and cleaners attached to a building, with a monthly salary sheet you can generate
+             and tick off as you pay.</p></article>
+        <article class="card"><div class="ico">📊</div><h3>Reports</h3>
+          <p>Per building, per month: rent collected, rent unpaid, bills, salaries and net profit - plus a
+             six-month chart of income against spending.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-soft">
+    <div class="wrap split">
+      <div>
+        <span class="eyebrow">Three roles</span>
+        <h2>Everyone sees exactly what they should.</h2>
+        <p>The system separates the person who owns the buildings, the person who runs them day to day and the
+           person who runs the platform.</p>
+        <ul class="ticks">
+          <li><strong>Owner</strong> - adds buildings, hires managers, sees every report</li>
+          <li><strong>Manager</strong> - collects rent, records bills, calls the plumber, pays the staff</li>
+          <li><strong>Admin</strong> - looks after subscribers, plans and the platform itself</li>
+          <li>One owner's data can never be seen by another owner - every query is scoped by account</li>
+        </ul>
+      </div>
+      <div class="split-media">
+        <img src="images/city-brand.svg" alt="Illustration of buildings in the brand colour" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">Under the hood</span>
+        <h2>Built the way the course asked for it.</h2>
+      </div>
+      <div class="grid three">
+        <article class="card"><h3>16 related tables</h3>
+          <p>Owners, managers, properties, floors, units, tenants, leases, rent payments, expenses, categories,
+             staff, salaries, maintenance, plans, subscriptions and admin.</p></article>
+        <article class="card"><h3>Normalised to 3NF</h3>
+          <p>No repeating groups, no partial dependency, no transitive dependency. Categories and plans live in
+             their own tables rather than as repeated text.</p></article>
+        <article class="card"><h3>Safe by default</h3>
+          <p>Bcrypt password hashing, prepared statements for every query, session checks on every endpoint and
+             escaped output in the browser.</p></article>
+      </div>
+      <p class="center" style="margin-top:2rem"><a class="btn big" href="signup.html">Create an account</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand light" href="index.html"><span class="mark"></span><span>Baribari</span></a>
+        <p style="margin-top:.8rem;max-width:32ch">Property management for building owners in Bangladesh.
+           A DBMS course project built with PHP, MySQL and plain JavaScript.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="login.html">Sign in</a>
+        <a href="signup.html">Create account</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About the team</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="contact.html">Help centre</a>
+        <a href="faq.html">Common questions</a>
+        <a href="tel:+8801700000000">01700-000000</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Baribari. Student project, not a commercial product.</span>
+      <span>Chattogram, Bangladesh</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+
+</body>
+</html>

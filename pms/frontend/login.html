@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in — Baribari</title>
+<meta name="description" content="Sign in as a property owner, manager or admin.">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav-bar" id="navBar">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html"><span class="mark"></span><span>Baribari</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn ghost" href="login.html">Sign in</a>
+      <a class="btn" href="signup.html">Get started</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap auth-page">
+      <div>
+        <span class="eyebrow">Welcome back</span>
+        <h1 style="font-size:clamp(1.9rem,5vw,2.6rem)">Sign in to your account</h1>
+        <p class="lead">Choose who you are signing in as. Owners and managers land on the property dashboard,
+           the admin gets the platform dashboard.</p>
+
+        <div class="form-card" style="margin-top:1.5rem">
+          <div class="tabs" role="tablist">
+            <button role="tab" data-role="owner" aria-selected="true">Property owner</button>
+            <button role="tab" data-role="manager" aria-selected="false">Manager</button>
+            <button role="tab" data-role="admin" aria-selected="false">Admin</button>
+          </div>
+
+          <div class="msg" id="msg"></div>
+
+          <div class="field"><label for="email">Email</label>
+            <input id="email" type="email" autocomplete="username" placeholder="owner@pms.com"></div>
+          <div class="field"><label for="password">Password</label>
+            <input id="password" type="password" autocomplete="current-password" placeholder="Your password"></div>
+
+          <button class="btn wide big" id="loginBtn">Sign in</button>
+          <p class="center muted" style="margin:1rem 0 0;font-size:.92rem" id="signupSwitch">
+            New here? <a href="signup.html">Create an owner account</a></p>
+
+          <div class="demo-box">
+            <strong style="color:#101a14">Demo logins</strong>
+            <table>
+              <tr><td>Owner</td><td>owner@pms.com / 123456</td></tr>
+              <tr><td>Manager</td><td>manager@pms.com / 123456</td></tr>
+              <tr><td>Admin</td><td>admin@pms.com / admin123</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="auth-aside">
+        <img src="images/city-evening.svg" alt="Illustration of apartment buildings in the evening">
+        <div class="card" style="margin-top:1rem">
+          <h3>Trouble signing in?</h3>
+          <p class="muted" style="font-size:.93rem">Make sure Apache and MySQL are running in XAMPP and that
+             <code>database/schema.sql</code> has been imported. Then check you picked the right tab above.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand light" href="index.html"><span class="mark"></span><span>Baribari</span></a>
+        <p style="margin-top:.8rem;max-width:32ch">Property management for building owners in Bangladesh.
+           A DBMS course project built with PHP, MySQL and plain JavaScript.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="login.html">Sign in</a>
+        <a href="signup.html">Create account</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About the team</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="contact.html">Help centre</a>
+        <a href="faq.html">Common questions</a>
+        <a href="tel:+8801700000000">01700-000000</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Baribari. Student project, not a commercial product.</span>
+      <span>Chattogram, Bangladesh</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

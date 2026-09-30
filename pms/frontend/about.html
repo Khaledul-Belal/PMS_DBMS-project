@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Baribari</title>
+  <meta name="description" content="The team behind the project and the tools we used.">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+
+  <header class="nav-bar" id="navBar">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html"><span class="mark"></span><span>Baribari</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn ghost" href="login.html">Sign in</a>
+        <a class="btn" href="signup.html">Get started</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow">About</span>
+        <h1>A course project with a real problem behind it</h1>
+        <p class="lead">Baribari started from a simple observation: most landlords in our city still run several
+          buildings out of one notebook and a calculator.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap split">
+        <div>
+          <h2>The problem we picked</h2>
+          <p>Ask any building owner in Chattogram what his flats earned him last month and the answer takes ten
+            minutes of flipping pages. Rent is written in one book, the electricity bill is a stack of receipts,
+            the caretaker's salary is remembered rather than recorded, and the plumber's bill is a number someone
+            said on the phone.</p>
+          <p>None of that is hard data to keep. It is just spread out. So we modelled it properly - sixteen tables,
+            clear relationships, no duplicated facts - and put a simple screen in front of it.</p>
+          <p>This is our Database Management Systems course project. The database design came first: the ER diagram,
+            the cardinalities and the normalisation. The website exists to prove the design works.</p>
+        </div>
+        <div class="split-media">
+          <img src="images/city-day.svg" alt="Illustration of apartment buildings" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="band-soft">
+      <div class="wrap">
+        <div class="section-head center">
+          <span class="eyebrow">The team</span>
+          <h2>Who built what</h2>
+          <p class="lead">Replace these names and roles with your own group members before you submit.</p>
+        </div>
+        <div class="team">
+          <article class="card">
+            <div class="avatar">A</div>
+            <h3>Member One</h3>
+            <p class="role">Database design</p>
+            <p>ER diagram, normalisation, schema and the seed data.</p>
+          </article>
+          <article class="card">
+            <div class="avatar b2">B</div>
+            <h3>Member Two</h3>
+            <p class="role">Backend</p>
+            <p>PHP API, sessions, authentication and query design.</p>
+          </article>
+          <article class="card">
+            <div class="avatar b3">C</div>
+            <h3>Member Three</h3>
+            <p class="role">Frontend - dashboard</p>
+            <p>Owner and manager dashboards, tables, forms and charts.</p>
+          </article>
+          <article class="card">
+            <div class="avatar b4">D</div>
+            <h3>Member Four</h3>
+            <p class="role">Frontend - website</p>
+            <p>Home page, features, pricing, about, FAQ and contact pages.</p>
+          </article>
+          <article class="card">
+            <div class="avatar">E</div>
+            <h3>Member Five</h3>
+            <p class="role">Testing and documentation</p>
+            <p>Test cases, README, report writing and the presentation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head center"><span class="eyebrow">Tools</span>
+          <h2>What it is built with</h2>
+        </div>
+        <div class="grid three">
+          <article class="card">
+            <h3>MySQL</h3>
+            <p>Sixteen tables with foreign keys, cascade deletes and unique
+              constraints that enforce the weak-entity identities.</p>
+          </article>
+          <article class="card">
+            <h3>PHP with PDO</h3>
+            <p>A small JSON API. Prepared statements everywhere,
+              bcrypt for passwords, sessions for login state.</p>
+          </article>
+          <article class="card">
+            <h3>HTML, CSS, JavaScript</h3>
+            <p>No framework and no build step. Every page is a
+              file you can open and read.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band-soft">
+      <div class="wrap">
+        <div class="section-head center"><span class="eyebrow">Timeline</span>
+          <h2>How the term went</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h3>Weeks 1-3</h3>
+            <p>Requirement gathering, talking to two building owners, listing the
+              entities and drawing the first ER diagram.</p>
+          </div>
+          <div class="step">
+            <h3>Weeks 4-8</h3>
+            <p>Normalising to 3NF, writing the schema, building the API and the
+              dashboards, loading demo data.</p>
+          </div>
+          <div class="step">
+            <h3>Weeks 9-12</h3>
+            <p>Public website, responsive testing on phones and tablets,
+              bug fixing, documentation and the final report.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <a class="brand light" href="index.html"><span class="mark"></span><span>Baribari</span></a>
+          <p style="margin-top:.8rem;max-width:32ch">Property management for building owners in Bangladesh.
+            A DBMS course project built with PHP, MySQL and plain JavaScript.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="login.html">Sign in</a>
+          <a href="signup.html">Create account</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About the team</a>
+          <a href="contact.html">Contact</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="contact.html">Help centre</a>
+          <a href="faq.html">Common questions</a>
+          <a href="tel:+8801700000000">01700-000000</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>&copy; 2026 Baribari. Student project, not a commercial product.</span>
+        <span>Chattogram, Bangladesh</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+
+</body>
+
+</html>

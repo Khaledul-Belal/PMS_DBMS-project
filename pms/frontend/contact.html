@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Baribari</title>
+<meta name="description" content="Get in touch about a demo or the project.">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav-bar" id="navBar">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html"><span class="mark"></span><span>Baribari</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn ghost" href="login.html">Sign in</a>
+      <a class="btn" href="signup.html">Get started</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <span class="eyebrow">Contact</span>
+      <h1>Talk to us</h1>
+      <p class="lead">Questions about the project, the database design or a demo for your own buildings.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split">
+      <div>
+        <div class="form-card">
+          <h2 style="font-size:1.35rem">Send a message</h2>
+          <p class="muted" style="font-size:.92rem">We usually reply within a day.</p>
+          <div class="msg" id="contactMsg"></div>
+          <div class="row-2">
+            <div class="field"><label for="c_name">Your name</label><input id="c_name" placeholder="Rahim Uddin"></div>
+            <div class="field"><label for="c_phone">Phone</label><input id="c_phone" placeholder="01XXXXXXXXX"></div>
+          </div>
+          <div class="field"><label for="c_email">Email</label><input id="c_email" type="email" placeholder="you@mail.com"></div>
+          <div class="field"><label for="c_subject">What is it about</label>
+            <select id="c_subject">
+              <option>A demo for my buildings</option>
+              <option>Pricing and plans</option>
+              <option>Something is not working</option>
+              <option>Question about the project</option>
+            </select></div>
+          <div class="field"><label for="c_message">Message</label>
+            <textarea id="c_message" placeholder="Tell us how many buildings you have and what you need."></textarea></div>
+          <button class="btn wide big" id="contactSend">Send message</button>
+          <p class="help muted">This form is front-end only in the student version - nothing is emailed.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="card" style="margin-bottom:1rem">
+          <div class="ico">📍</div><h3>Where we are</h3>
+          <p>Department of Computer Science<br>Chattogram, Bangladesh</p>
+        </div>
+        <div class="card" style="margin-bottom:1rem">
+          <div class="ico">📞</div><h3>Phone</h3>
+          <p><a href="tel:+8801700000000">01700-000000</a><br>Sunday to Thursday, 10am - 6pm</p>
+        </div>
+        <div class="card" style="margin-bottom:1rem">
+          <div class="ico">✉️</div><h3>Email</h3>
+          <p><a href="mailto:hello@baribari.test">hello@baribari.test</a></p>
+        </div>
+        <img src="images/city-brand.svg" alt="Illustration of buildings" style="border-radius:16px" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand light" href="index.html"><span class="mark"></span><span>Baribari</span></a>
+        <p style="margin-top:.8rem;max-width:32ch">Property management for building owners in Bangladesh.
+           A DBMS course project built with PHP, MySQL and plain JavaScript.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="login.html">Sign in</a>
+        <a href="signup.html">Create account</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About the team</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="contact.html">Help centre</a>
+        <a href="faq.html">Common questions</a>
+        <a href="tel:+8801700000000">01700-000000</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Baribari. Student project, not a commercial product.</span>
+      <span>Chattogram, Bangladesh</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

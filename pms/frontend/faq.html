@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ — Baribari</title>
+<meta name="description" content="Common questions about using Baribari.">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav-bar" id="navBar">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html"><span class="mark"></span><span>Baribari</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="faq.html" aria-current="page">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn ghost" href="login.html">Sign in</a>
+      <a class="btn" href="signup.html">Get started</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <span class="eyebrow">FAQ</span>
+      <h1>Questions people ask us</h1>
+      <p class="lead">If your question is not here, the contact page reaches us directly.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap faq">
+      <h2 style="margin-bottom:1.2rem">Using the system</h2>
+      <details open><summary>Do I need to be good with computers?</summary>
+        <p>No. If you can use a phone you can use this. Every screen is a list with an Add button, and nothing is
+           deleted without asking you first.</p></details>
+      <details><summary>Can my manager use it instead of me?</summary>
+        <p>Yes. Create a manager from your dashboard and give him the email and password. He sees the same
+           buildings but cannot delete them or hire other managers.</p></details>
+      <details><summary>What if one flat has a different rent from the others?</summary>
+        <p>Build the floors in bulk, then open any flat and change its rent, size or number of bedrooms.</p></details>
+      <details><summary>A tenant paid only half the rent. Can I record that?</summary>
+        <p>Yes. Enter the amount you actually received and the line is marked partial, with the remainder showing
+           in the month's dues.</p></details>
+      <details><summary>A tenant is leaving. What do I do?</summary>
+        <p>End the agreement from the Leases page. The flat immediately becomes vacant and is ready for the next
+           tenant, while the old agreement stays in the history.</p></details>
+      <details><summary>Does the repair cost go into my accounts?</summary>
+        <p>When you mark a maintenance job as done and type the cost, an expense is created for that building
+           automatically, so the profit figure is always honest.</p></details>
+
+      <h2 style="margin:2.5rem 0 1.2rem">Account and data</h2>
+      <details><summary>Can another landlord see my buildings?</summary>
+        <p>No. Every request checks who is logged in and filters by account, so one owner's data is invisible to
+           every other owner.</p></details>
+      <details><summary>Are my passwords safe?</summary>
+        <p>Passwords are stored as bcrypt hashes. Even with a copy of the database, nobody can read them.</p></details>
+      <details><summary>What happens if the admin deletes my account?</summary>
+        <p>Everything that belongs to it goes with it - buildings, tenants, agreements, bills and managers. The
+           database does this with cascade deletes, so nothing is left orphaned.</p></details>
+
+      <h2 style="margin:2.5rem 0 1.2rem">For the examiner</h2>
+      <details><summary>Where is the ER diagram?</summary>
+        <p>In the <code>docs</code> folder. Open <code>er-diagram.html</code> in a browser for the Chen notation
+           diagram with relationship diamonds, and a second page with every entity's attributes.</p></details>
+      <details><summary>Is the schema normalised?</summary>
+        <p>Yes, to third normal form. The reasoning, including the one deliberate exception, is written out in
+           <code>docs/ER-DIAGRAM.md</code>.</p></details>
+      <details><summary>How do I run it?</summary>
+        <p>Copy the folder into XAMPP's <code>htdocs</code>, import <code>database/schema.sql</code> through
+           phpMyAdmin and open <code>http://localhost/pms/frontend/</code>.</p></details>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand light" href="index.html"><span class="mark"></span><span>Baribari</span></a>
+        <p style="margin-top:.8rem;max-width:32ch">Property management for building owners in Bangladesh.
+           A DBMS course project built with PHP, MySQL and plain JavaScript.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="login.html">Sign in</a>
+        <a href="signup.html">Create account</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About the team</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="contact.html">Help centre</a>
+        <a href="faq.html">Common questions</a>
+        <a href="tel:+8801700000000">01700-000000</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Baribari. Student project, not a commercial product.</span>
+      <span>Chattogram, Bangladesh</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pricing — Baribari</title>
+<meta name="description" content="Basic, Standard and Premium plans priced in taka.">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav-bar" id="navBar">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html"><span class="mark"></span><span>Baribari</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html" aria-current="page">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn ghost" href="login.html">Sign in</a>
+      <a class="btn" href="signup.html">Get started</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <span class="eyebrow">Pricing</span>
+      <h1>Simple plans, priced in taka</h1>
+      <p class="lead">Pick a plan when you sign up. You can see and change the plans from the admin dashboard at any time.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="plans" id="planList">
+        <div class="plan"><h3>Basic</h3><div class="price">&#2547;500 <small>/ 30 days</small></div>
+          <ul><li>Up to 2 buildings</li><li>1 manager login</li><li>Tenants, rent and bills</li>
+              <li>Monthly report</li></ul>
+          <a class="btn ghost wide" href="signup.html">Choose Basic</a></div>
+        <div class="plan featured"><h3>Standard</h3><div class="price">&#2547;1,500 <small>/ 30 days</small></div>
+          <ul><li>Up to 10 buildings</li><li>Unlimited manager logins</li><li>Staff and salary sheet</li>
+              <li>Maintenance tracking</li><li>Six-month income chart</li></ul>
+          <a class="btn wide" href="signup.html">Choose Standard</a></div>
+        <div class="plan"><h3>Premium</h3><div class="price">&#2547;4,000 <small>/ 90 days</small></div>
+          <ul><li>Up to 50 buildings</li><li>Everything in Standard</li><li>Priority support</li>
+              <li>Best value per month</li></ul>
+          <a class="btn ghost wide" href="signup.html">Choose Premium</a></div>
+      </div>
+      <p class="center muted" style="margin-top:1rem" id="planNote">Prices load from the database when the
+         server is running.</p>
+    </div>
+  </section>
+
+  <section class="band-soft">
+    <div class="wrap">
+      <div class="section-head center"><h2>What is included</h2></div>
+      <div class="table-wrap">
+        <table class="table-simple">
+          <thead><tr><th>Feature</th><th>Basic</th><th>Standard</th><th>Premium</th></tr></thead>
+          <tbody>
+            <tr><td>Buildings</td><td>2</td><td>10</td><td>50</td></tr>
+            <tr><td>Flats per building</td><td>Unlimited</td><td>Unlimited</td><td>Unlimited</td></tr>
+            <tr><td>Manager logins</td><td>1</td><td>Unlimited</td><td>Unlimited</td></tr>
+            <tr><td>Tenants and agreements</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
+            <tr><td>Rent collection</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
+            <tr><td>Bills and maintenance</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
+            <tr><td>Staff salary sheet</td><td>&#8212;</td><td>&#10003;</td><td>&#10003;</td></tr>
+            <tr><td>Monthly profit report</td><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td></tr>
+            <tr><td>Priority support</td><td>&#8212;</td><td>&#8212;</td><td>&#10003;</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap faq">
+      <div class="section-head center"><h2>Questions about billing</h2></div>
+      <details><summary>How do I pay?</summary>
+        <p>In this student version the subscription is recorded with a transaction id when you sign up. A real
+           bKash or Nagad gateway would slot into the same table without any schema change.</p></details>
+      <details><summary>What happens when my plan runs out?</summary>
+        <p>The subscription is marked expired. Your data stays exactly where it is - you simply renew to keep
+           adding buildings.</p></details>
+      <details><summary>Can I change plan later?</summary>
+        <p>Yes. Each purchase is a new row in the subscription table, so your whole payment history is kept.</p></details>
+      <details><summary>What if I have more buildings than my plan allows?</summary>
+        <p>The system stops you from adding one more and tells you which plan to move to. Nothing is deleted.</p></details>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand light" href="index.html"><span class="mark"></span><span>Baribari</span></a>
+        <p style="margin-top:.8rem;max-width:32ch">Property management for building owners in Bangladesh.
+           A DBMS course project built with PHP, MySQL and plain JavaScript.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="login.html">Sign in</a>
+        <a href="signup.html">Create account</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About the team</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="contact.html">Help centre</a>
+        <a href="faq.html">Common questions</a>
+        <a href="tel:+8801700000000">01700-000000</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Baribari. Student project, not a commercial product.</span>
+      <span>Chattogram, Bangladesh</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+<script src="js/api.js"></script>
+<script src="js/pricing.js"></script>
+</body>
+</html>
